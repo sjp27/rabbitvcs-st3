@@ -1,0 +1,13 @@
+[
+	{ "id" : "rabbitvcs-st3", "caption" : "RabbitVCS", 
+      "children": [
+        { "caption" : "Add", "command" : "rabbitvcs_add", "args": {"dirs": []} },
+        { "caption" : "Blame", "command" : "rabbitvcs_blame" },
+        { "caption" : "Commit", "command" : "rabbitvcs_commit", "args": {"dirs": []} },
+        { "caption" : "Diff", "command" : "rabbitvcs_diff", "args": {"dirs": []} },
+        { "caption" : "Revert", "command" : "rabbitvcs_revert", "args": {"dirs": []} },
+        { "caption" : "Show log", "command" : "rabbitvcs_log", "args": {"dirs": []} },
+        { "caption" : "Sync...", "command" : "rabbitvcs_sync" },
+      ]
+    }
+]
