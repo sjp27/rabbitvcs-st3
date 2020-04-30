@@ -7,8 +7,7 @@
         { "caption" : "Commit (repo)...", "command" : "rabbitvcs_commit_repo" },
         { "caption" : "Diff", "command" : "rabbitvcs_diff" },
         { "caption" : "Revert", "command" : "rabbitvcs_revert" },
-        { "caption" : "Show log", "command" : "rabbitvcs_log" },
-        { "caption" : "Sync (repo)...", "command" : "rabbitvcs_sync" }
+        { "caption" : "Show log", "command" : "rabbitvcs_log" }
       ]
     }
 ]

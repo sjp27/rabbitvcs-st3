@@ -114,18 +114,6 @@ class RabbitvcsStatusCommand(RabbitvcsCommandBase):
     def _relevant_path(self):
         return self._active_file_or_repo_path()
 
-
-class RabbitvcsSyncCommand(RabbitvcsCommandBase):
-    def is_enabled(self):
-        return False
-
-    def run(self, edit=None):
-        self._execute_command('sync')
-
-    def _relevant_path(self):
-        return self._active_repo_path()
-
-
 class RabbitvcsBlameCommand(RabbitvcsCommandBase):
     def is_enabled(self):
         return False
