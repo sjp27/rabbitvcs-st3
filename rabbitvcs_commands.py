@@ -63,9 +63,7 @@ class RabbitvcsCommandBase(sublime_plugin.WindowCommand):
         else:
             return
 
-    def _execute_command(self, command, path=None):
-        args = "null"
-
+    def _execute_command(self, command, path=None, args="null"):
         if path is None:
             run_rabbitvcs_command(command, args, self._relevant_path())
         else:
@@ -115,11 +113,8 @@ class RabbitvcsStatusCommand(RabbitvcsCommandBase):
         return self._active_file_or_repo_path()
 
 class RabbitvcsBlameCommand(RabbitvcsCommandBase):
-    def is_enabled(self):
-        return False
-
-    def run(self, edit=None):
-        self._execute_command('blame')
+    def run(self, edit=None, dirs=[]):
+        self._execute_command('blame', self._selected_dir(dirs), str(self._active_line_number()))
 
     def _relevant_path(self):
         return self._active_file_path()

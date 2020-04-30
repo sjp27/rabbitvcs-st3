@@ -47,7 +47,7 @@ def run_rabbitvcs_command(command, args, path):
             if args == "null":
                 args = ['rabbitvcs', command, path]
             else:
-                args = ['rabbitvcs', command, args, path]
+                args = ['rabbitvcs', command, path, args]
             print("Running {0}".format(args))
             env = os.environ.copy()
             proc = subprocess.Popen(args, env=env) 
